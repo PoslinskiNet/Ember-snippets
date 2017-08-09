@@ -1,1 +1,12 @@
-{}
+{
+  "import": {
+    "prefix": "imp",
+    "body": "import Ember from 'ember';"
+  },
+
+  "component": {
+    "prefix": "cmp",
+    "body": "import Ember from 'ember';\n\nconst { Component } = Ember;\n\nexport default Component.extend({\n});",
+    "description": "Import Ember component"
+  }
+}
