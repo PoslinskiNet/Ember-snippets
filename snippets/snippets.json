@@ -1,12 +1,58 @@
 {
   "import": {
-    "prefix": "imp",
-    "body": "import Ember from 'ember';"
+    "prefix": "impe",
+    "body": "import Ember from 'ember';",
+    "description": "Import Ember"
+  },
+
+  "importJS": {
+    "prefix": "impj",
+    "body": "import ${2:moduleName} from '${1:module}';$0"
   },
 
   "component": {
-    "prefix": "cmp",
+    "prefix": "component",
     "body": "import Ember from 'ember';\n\nconst { Component } = Ember;\n\nexport default Component.extend({\n});",
     "description": "Import Ember component"
+  },
+
+  "fullComponent": {
+    "prefix": "fcomponent",
+    "body": "import Ember from 'ember';\n\nconst { Component, computed, inject } = Ember;\n\nexport default Component.extend{(\n\n${1:ServiceName}: inject.service(),\n\n${2:computeName: computed('${3:property}', function({\n}}),\n\n});"
+  },
+
+  "componentDest": {
+    "prefix": "componentdest",
+    "body": "const { Component } = Ember;\n\nexport default Component.extend({\n});"
+  },
+
+  "alert": {
+    "prefix": "alrt",
+    "body": "alert(${1:obj});"
+  },
+
+  "inject": {
+    "prefix": "inj",
+    "body": "const { inject } = Ember;\n"
+  },
+
+  "serviceInject": {
+    "prefix": "servi",
+    "body": "${2:ServiceName}: inject.service($1),\n"
+  },
+
+  "computed": {
+    "prefix": "comp",
+    "body": "${2:computeName: computed('${1:property}', function() {\n}}),"
+  },
+
+  "computedDest": {
+    "prefix": "compdest",
+    "body": "const { computed } = Ember;\n"
+  },
+
+  "destMostPopular": {
+    "prefix": "destcom",
+    "body": "const { Component, computed, inject } = Ember;\n"
   }
 }
