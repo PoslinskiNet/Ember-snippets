@@ -2,7 +2,7 @@
     "name": "ember-2-14-snippets",
     "displayName": "Ember-2.14-Snippets",
     "description": "Ember code snippets for VSCode",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "Rxbsxn",
     "icon": "images/logo.png",
     "keywords": [
