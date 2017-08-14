@@ -4,6 +4,7 @@
     "description": "Ember code snippets for VSCode",
     "version": "0.0.1",
     "publisher": "Rxbsxn",
+    "icon": "images/logo.png",
     "keywords": [
         "snippets",
         "ember",
