@@ -41,18 +41,199 @@
     "body": "${2:ServiceName}: inject.service($1),\n"
   },
 
-  "computed": {
-    "prefix": "comp",
-    "body": "${2:computeName: computed('${1:property}', function() {\n}}),"
+  "destMostPopular": {
+    "prefix": "destcom",
+    "body": "const { Component, computed, inject } = Ember;\n"
   },
+
+  "actions": {
+    "prefix": "actions",
+    "body": "actions: {\n\n}"
+  },
+
+  // Component Lifecycle
+
+  "init": {
+    "prefix": "init",
+    "body": "init() {\n\tthis.super(...arguments);\n}"
+  },
+
+
+  "didInsertElement": {
+    "prefix": "die",
+    "body": "didInsertElement() {\n\tthis.super(...arguments);\n}"
+  },
+
+  "didRender": {
+    "prefix": "dr",
+    "body": "didRender() {\n\tthis.super(...arguments);\n}"
+  },
+
+  "didReceiveAttrs": {
+    "prefix": "dra",
+    "body": "didReceiveAttrs() {\n\tthis.super(...arguments);\n}"
+  },
+
+  // computed
 
   "computedDest": {
     "prefix": "compdest",
     "body": "const { computed } = Ember;\n"
   },
 
-  "destMostPopular": {
-    "prefix": "destcom",
-    "body": "const { Component, computed, inject } = Ember;\n"
-  }
+  "computed": {
+    "prefix": "comp",
+    "body": "${2:computeName}: computed('${1:dependentKey}', function() {\n}}),"
+  },
+
+  "computedAlias": {
+    "prefix": "alias",
+    "body": "${2:computeName}: computed.alias('${1:dependentKey}'),"
+  },
+
+  "computedAnd": {
+    "prefix": "and",
+    "body": "${3:computeName}: computed.and('${2:dependentKey}', '${1:dependentKey}'),"
+  },
+
+  "computedBool": {
+    "prefix": "bool",
+    "body": "${2:computeName}: computed.bool('${1:dependentKey}'),"
+  },
+
+  "computedCollect": {
+    "prefix": "collect",
+    "body": "${3:computeName}: computed.collect('${2:dependentKey}', '${1:dependentKey}'),"
+  },
+
+  "computedEmpty": {
+    "prefix": "empty",
+    "body": "${2:computeName}: computed.empty('${1:dependentKey}'),"
+  },
+
+  "computedEqual": {
+    "prefix": "equal",
+    "body": "${3:computeName}: computed.equal('${2:dependentKey}', ${1:value}),"
+  },
+
+  "computedFilter": {
+    "prefix": "filter",
+    "body": "${5:computeName}: computed.filter('${4:dependentKey}', function(${3:item}, ${2:index}, ${1:array}) {\n\n}),"
+  },
+
+  "computedFilterBy": {
+    "prefix": "filterBy",
+    "body": "${4:computeName}: computed.filterBy('${3:dependentKey}', '${2:key}', ${1:value}),"
+  },
+
+  "computedGt": {
+    "prefix": "gt",
+    "body": "${3:computeName}: computed.gt('${2:dependentKey}', ${1:value}),"
+  },
+
+  "computedGte": {
+    "prefix": "gte",
+    "body": "${3:computeName}: computed.gte('${2:dependentKey}', ${1:value}),"
+  },
+
+   "computedIntersect": {
+    "prefix": "intersect",
+    "body": "${3:computeName}: computed.intersect('${2:array}', '${1:array}'),"
+  },
+
+  "computedLt": {
+    "prefix": "Lt",
+    "body": "${3:computeName}: computed.lt('${2:dependentKey}', ${1:value}),"
+  },
+
+  "computedLte": {
+    "prefix": "lte",
+    "body": "${3:computeName}: computed.lte('${2:dependentKey}', ${1:value}),"
+  },
+
+  "computedMap": {
+    "prefix": "map",
+    "body": "${5:computeName}: computed.map('${4:dependentKey}', function(${3:item}, ${2:index}) {\n\n}),"
+  },
+
+  "computedMapBy": {
+    "prefix": "mapBy",
+    "body": "${3:computeName}: computed.mapBy('${2:array}', '${1:key}'),"
+  },
+
+  "computedMatch": {
+    "prefix": "match",
+    "body": "${3:computeName}: computed.match('${2:dependentKey}', ${1:regexp}),"
+  },
+
+  "computedMax": {
+    "prefix": "max",
+    "body": "${2:computeName}: computed.max('${1:dependentKey}'),"
+  },
+
+   "computedMin": {
+    "prefix": "min",
+    "body": "${2:computeName}: computed.min('${1:dependentKey}'),"
+  },
+
+  "computedNone": {
+    "prefix": "none",
+    "body": "${2:computeName}: computed.none('${1:dependentKey}'),"
+  },
+
+  "computedNot": {
+    "prefix": "not",
+    "body": "${2:computeName}: computed.not('${1:dependentKey}'),"
+  },
+
+  "computedNotEmpty": {
+    "prefix": "notEmpty",
+    "body": "${2:computeName}: computed.notEmpty('${1:dependentKey}'),"
+  },
+
+  "computedOneWay": {
+    "prefix": "oneWay",
+    "body": "${2:computeName}: computed.oneWay('${1:dependentKey}'),"
+  },
+
+  "computedOr": {
+    "prefix": "or",
+    "body": "${2:computeName}: computed.or('${1:dependentKey}'),"
+  },
+
+  "computedSum": {
+    "prefix": "sum",
+    "body": "${2:computeName}: computed.sum('${1:dependentKey}'),"
+  },
+
+  "computedReadOnly": {
+    "prefix": "readOnly",
+    "body": "${2:computeName}: computed.readOnly('${1:dependentKey}'),"
+  },
+
+  "computedReads": {
+    "prefix": "reads",
+    "body": "${2:computeName}: computed.reads('${1:dependentKey}'),"
+  },
+
+  "computedSetDiff": {
+    "prefix": "setDiff",
+    "body": "${3:computeName}: computed.setDiff('${2:arrayA}', '${1:arrayB}'),"
+  },
+
+  "computedUnion": {
+    "prefix": "union",
+    "body": "${3:computeName}: computed.union('${2:arrayA}', '${1:arrayB}'),"
+  },
+
+  "computedUniq": {
+    "prefix": "uniq",
+    "body": "${3:computeName}: computed.uniq('${1:propertyKey}'),"
+  },
+
+  "computedUniqBy": {
+    "prefix": "uniqBy",
+    "body": "${3:computeName}: computed.uniqBy('${2:dependentKey}', '${1:propertyKey}'),"
+  },
+
 }
