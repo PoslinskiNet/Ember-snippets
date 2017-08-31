@@ -55,9 +55,15 @@
 |`uniqBy→`|`computeName: computed.uniqBy('dependentKey', 'propertyKey')`|
 
 
-
-
-
+# Store
+|Prefix|Method|
+|-------:|-------|
+|`injstore`|`store: inject.service(),`|
+|`gstore`|`this.get('store')`|
+|`fall`|`this.get('store').findAll('model')`|
+|`pall`|`this.get('store').peekAll('model')`|
+|`query`|`this.get('store').query('model', {})`|
+|`find`|`this.get('store').find('model', id)`|
 
 
 
