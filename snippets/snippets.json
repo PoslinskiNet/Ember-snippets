@@ -1,49 +1,179 @@
 {
   "import": {
-    "prefix": "impe",
+    "prefix": "import Ember",
     "body": "import Ember from 'ember';",
     "description": "Import Ember"
   },
 
   "importJS": {
-    "prefix": "impj",
+    "prefix": "import module",
     "body": "import ${1:moduleName} from '${2:module}';$0"
   },
 
   "component": {
-    "prefix": "component",
-    "body": "import Ember from 'ember';\n\nconst { Component } = Ember;\n\nexport default Component.extend({\n});",
+    "prefix": "ember component",
+    "body": "import Component from '@ember/component';\n\nexport default Component.extend({\n\n})",
     "description": "Import Ember component"
   },
 
   "fullComponent": {
-    "prefix": "fcomponent",
-    "body": "import Ember from 'ember';\n\nconst { Component, computed, inject } = Ember;\n\nexport default Component.extend{(\n\n${1:ServiceName}: inject.service(),\n\n${2:computeName: computed('${3:property}', function({\n}}),\n\n});"
-  },
-
-  "componentDest": {
-    "prefix": "componentdest",
-    "body": "const { Component } = Ember;\n\nexport default Component.extend({\n});"
+    "prefix": "full component",
+    "body": "import Component from '@ember/component';\nimport { computed } from '@ember/object';\nimport { inject as service } from '@ember/service';\n\nexport default Component.extend({\n\n})"
   },
 
   "alert": {
-    "prefix": "alrt",
+    "prefix": "alert",
     "body": "alert(${1:obj});"
   },
 
   "inject": {
-    "prefix": "inj",
-    "body": "const { inject } = Ember;\n"
+    "prefix": "inject",
+    "body": "import { inject as service } from '@ember/service';\n"
   },
 
+  "importAlias": {
+    "prefix": "alias import",
+    "body": "import { alias } from '@ember/object/computed';\n"    
+  },
+
+  "importAnd": {
+    "prefix": "and import",
+    "body": "import { and } from '@ember/object/computed';\n"    
+  },
+
+  "importBool": {
+    "prefix": "bool import",
+    "body": "import { bool } from '@ember/object/computed';\n"    
+  },
+
+  "importCollect": {
+    "prefix": "collect import",
+    "body": "import { collect } from '@ember/object/computed';\n"    
+  },
+
+  "importEmpty": {
+    "prefix": "empty import",
+    "body": "import { empty } from '@ember/object/computed';\n"    
+  },
+
+  "importEqual": {
+    "prefix": "equal import",
+    "body": "import { equal } from '@ember/object/computed';\n"    
+  },
+
+  "importFilter": {
+    "prefix": "filter import",
+    "body": "import { filter } from '@ember/object/computed';\n"    
+  },
+
+  "importFilterBy": {
+    "prefix": "filterBy import",
+    "body": "import { filterBy } from '@ember/object/computed';\n"    
+  },
+
+  "importGt": {
+    "prefix": "gt import",
+    "body": "import { gt } from '@ember/object/computed';\n"    
+  },
+
+  "importGte": {
+    "prefix": "gte import",
+    "body": "import { gte } from '@ember/object/computed';\n"    
+  },
+
+  "importIntersect": {
+    "prefix": "intersect import",
+    "body": "import { intersect } from '@ember/object/computed';\n"    
+  },
+
+  "importMap": {
+    "prefix": "map import",
+    "body": "import { map } from '@ember/object/computed';\n"    
+  },
+
+  "importMapBy": {
+    "prefix": "mapBy import",
+    "body": "import { mapBy } from '@ember/object/computed';\n"    
+  },
+
+  "importMatch": {
+    "prefix": "match import",
+    "body": "import { match } from '@ember/object/computed';\n"    
+  },
+
+  "importMax": {
+    "prefix": "max import",
+    "body": "import { max } from '@ember/object/computed';\n"    
+  },
+
+  "importMin": {
+    "prefix": "min import",
+    "body": "import { min } from '@ember/object/computed';\n"    
+  },
+
+  "importNone": {
+    "prefix": "none import",
+    "body": "import { none } from '@ember/object/computed';\n"    
+  },
+
+  "importNotEmpty": {
+    "prefix": "notEmpty import",
+    "body": "import { notEmpty } from '@ember/object/computed';\n"    
+  },
+
+  "importOneWay": {
+    "prefix": "oneWay import",
+    "body": "import { oneWay } from '@ember/object/computed';\n"    
+  },
+
+  "importOr": {
+    "prefix": "or import",
+    "body": "import { or } from '@ember/object/computed';\n"    
+  },
+
+  "importReadOnly": {
+    "prefix": "readOnly import",
+    "body": "import { readOnly } from '@ember/object/computed';\n"    
+  },
+
+  "importReads": {
+    "prefix": "reads import",
+    "body": "import { reads } from '@ember/object/computed';\n"    
+  },
+
+  "importSetDiff": {
+    "prefix": "setDiff import",
+    "body": "import { setDiff } from '@ember/object/computed';\n"    
+  },
+
+  "importSort": {
+    "prefix": "sort import",
+    "body": "import { sort } from '@ember/object/computed';\n"    
+  },
+
+  "importSum": {
+    "prefix": "sum import",
+    "body": "import { sum } from '@ember/object/computed';\n"    
+  },
+
+  "importUnion": {
+    "prefix": "union import",
+    "body": "import { union } from '@ember/object/computed';\n"    
+  },
+
+  "importUniq": {
+    "prefix": "uniq import",
+    "body": "import { uniq } from '@ember/object/computed';\n"    
+  },
+
+  "importUniqBy": {
+    "prefix": "uniqBy import",
+    "body": "import { uniqBy } from '@ember/object/computed';\n"    
+  },
+  
   "serviceInject": {
-    "prefix": "servi",
-    "body": "${1:ServiceName}: inject.service($2),\n"
-  },
-
-  "destMostPopular": {
-    "prefix": "destcom",
-    "body": "const { Component, computed, inject } = Ember;\n"
+    "prefix": "service inject",
+    "body": "${1:ServiceName}: service($2),\n"
   },
 
   "actions": {
@@ -60,201 +190,201 @@
 
 
   "didInsertElement": {
-    "prefix": "die",
+    "prefix": "didInsertElement",
     "body": "didInsertElement() {\n\tthis.super(...arguments);\n}"
   },
 
   "didRender": {
-    "prefix": "dr",
+    "prefix": "didRender",
     "body": "didRender() {\n\tthis.super(...arguments);\n}"
   },
 
   "didReceiveAttrs": {
-    "prefix": "dra",
+    "prefix": "didReceiveAttrs",
     "body": "didReceiveAttrs() {\n\tthis.super(...arguments);\n}"
+  },
+
+  "didUpdateAttrs": {
+    "prefix": "didUpdateAttrs",
+    "body": "didUpdateAttrs() {\n\tthis.super(...arguments);\n}"
   },
 
   // computed
 
-  "computedDest": {
-    "prefix": "compdest",
-    "body": "const { computed } = Ember;\n"
-  },
-
   "computed": {
-    "prefix": "comp",
+    "prefix": "computed",
     "body": "${1:computeName}: computed('${2:dependentKey}', function() {\n\n}),"
   },
 
   "computedAlias": {
     "prefix": "alias",
-    "body": "${1:computeName}: computed.alias('${2:dependentKey}'),"
+    "body": "${1:computeName}: alias('${2:dependentKey}'),"
   },
 
   "computedAnd": {
     "prefix": "and",
-    "body": "${1:computeName}: computed.and('${2:dependentKey}', '${3:dependentKey}'),"
+    "body": "${1:computeName}: and('${2:dependentKey}', '${3:dependentKey}'),"
   },
 
   "computedBool": {
     "prefix": "bool",
-    "body": "${1:computeName}: computed.bool('${2:dependentKey}'),"
+    "body": "${1:computeName}: bool('${2:dependentKey}'),"
   },
 
   "computedCollect": {
     "prefix": "collect",
-    "body": "${1:computeName}: computed.collect('${2:dependentKey}', '${3:dependentKey}'),"
+    "body": "${1:computeName}: collect('${2:dependentKey}', '${3:dependentKey}'),"
   },
 
   "computedEmpty": {
     "prefix": "empty",
-    "body": "${1:computeName}: computed.empty('${2:dependentKey}'),"
+    "body": "${1:computeName}: empty('${2:dependentKey}'),"
   },
 
   "computedEqual": {
     "prefix": "equal",
-    "body": "${1:computeName}: computed.equal('${2:dependentKey}', ${3:value}),"
+    "body": "${1:computeName}: equal('${2:dependentKey}', ${3:value}),"
   },
 
   "computedFilter": {
     "prefix": "filter",
-    "body": "${1:computeName}: computed.filter('${2:dependentKey}', function(${3:item}, ${4:index}, ${5:array}) {\n\n}),"
+    "body": "${1:computeName}: filter('${2:dependentKey}', function(${3:item}, ${4:index}, ${5:array}) {\n\n}),"
   },
 
   "computedFilterBy": {
     "prefix": "filterBy",
-    "body": "${1:computeName}: computed.filterBy('${2:dependentKey}', '${3:key}', ${4:value}),"
+    "body": "${1:computeName}: filterBy('${2:dependentKey}', '${3:key}', ${4:value}),"
   },
 
   "computedGt": {
     "prefix": "gt",
-    "body": "${1:computeName}: computed.gt('${2:dependentKey}', ${3:value}),"
+    "body": "${1:computeName}: gt('${2:dependentKey}', ${3:value}),"
   },
 
   "computedGte": {
     "prefix": "gte",
-    "body": "${1:computeName}: computed.gte('${2:dependentKey}', ${3:value}),"
+    "body": "${1:computeName}: gte('${2:dependentKey}', ${3:value}),"
   },
 
    "computedIntersect": {
     "prefix": "intersect",
-    "body": "${1:computeName}: computed.intersect('${2:array}', '${3:array}'),"
+    "body": "${1:computeName}: intersect('${2:array}', '${3:array}'),"
   },
 
   "computedLt": {
     "prefix": "Lt",
-    "body": "${1:computeName}: computed.lt('${2:dependentKey}', ${3:value}),"
+    "body": "${1:computeName}: lt('${2:dependentKey}', ${3:value}),"
   },
 
   "computedLte": {
     "prefix": "lte",
-    "body": "${1:computeName}: computed.lte('${2:dependentKey}', ${3:value}),"
+    "body": "${1:computeName}: lte('${2:dependentKey}', ${3:value}),"
   },
 
   "computedMap": {
     "prefix": "map",
-    "body": "${1:computeName}: computed.map('${2:dependentKey}', function(${3:item}, ${4:index}) {\n\n}),"
+    "body": "${1:computeName}: map('${2:dependentKey}', function(${3:item}, ${4:index}) {\n\n}),"
   },
 
   "computedMapBy": {
     "prefix": "mapBy",
-    "body": "${1:computeName}: computed.mapBy('${2:array}', '${3:key}'),"
+    "body": "${1:computeName}: mapBy('${2:array}', '${3:key}'),"
   },
 
   "computedMatch": {
     "prefix": "match",
-    "body": "${1:computeName}: computed.match('${2:dependentKey}', ${3:regexp}),"
+    "body": "${1:computeName}: match('${2:dependentKey}', ${3:regexp}),"
   },
 
   "computedMax": {
     "prefix": "max",
-    "body": "${1:computeName}: computed.max('${1:dependentKey}'),"
+    "body": "${1:computeName}: max('${1:dependentKey}'),"
   },
 
    "computedMin": {
     "prefix": "min",
-    "body": "${1:computeName}: computed.min('${1:dependentKey}'),"
+    "body": "${1:computeName}: min('${1:dependentKey}'),"
   },
 
   "computedNone": {
     "prefix": "none",
-    "body": "${1:computeName}: computed.none('${1:dependentKey}'),"
+    "body": "${1:computeName}: none('${1:dependentKey}'),"
   },
 
   "computedNot": {
     "prefix": "not",
-    "body": "${1:computeName}: computed.not('${1:dependentKey}'),"
+    "body": "${1:computeName}: not('${1:dependentKey}'),"
   },
 
   "computedNotEmpty": {
     "prefix": "notEmpty",
-    "body": "${1:computeName}: computed.notEmpty('${1:dependentKey}'),"
+    "body": "${1:computeName}: notEmpty('${1:dependentKey}'),"
   },
 
   "computedOneWay": {
     "prefix": "oneWay",
-    "body": "${1:computeName}: computed.oneWay('${1:dependentKey}'),"
+    "body": "${1:computeName}: oneWay('${1:dependentKey}'),"
   },
 
   "computedOr": {
     "prefix": "or",
-    "body": "${1:computeName}: computed.or('${1:dependentKey}'),"
+    "body": "${1:computeName}: or('${1:dependentKey}'),"
   },
 
   "computedSum": {
     "prefix": "sum",
-    "body": "${1:computeName}: computed.sum('${1:dependentKey}'),"
+    "body": "${1:computeName}: sum('${1:dependentKey}'),"
   },
 
   "computedReadOnly": {
     "prefix": "readOnly",
-    "body": "${1:computeName}: computed.readOnly('${1:dependentKey}'),"
+    "body": "${1:computeName}: readOnly('${1:dependentKey}'),"
   },
 
   "computedReads": {
     "prefix": "reads",
-    "body": "${1:computeName}: computed.reads('${1:dependentKey}'),"
+    "body": "${1:computeName}: reads('${1:dependentKey}'),"
   },
 
   "computedSetDiff": {
     "prefix": "setDiff",
-    "body": "${1:computeName}: computed.setDiff('${2:arrayA}', '${3:arrayB}'),"
+    "body": "${1:computeName}: setDiff('${2:arrayA}', '${3:arrayB}'),"
   },
 
   "computedUnion": {
     "prefix": "union",
-    "body": "${1:computeName}: computed.union('${2:arrayA}', '${3:arrayB}'),"
+    "body": "${1:computeName}: union('${2:arrayA}', '${3:arrayB}'),"
   },
 
   "computedUniq": {
     "prefix": "uniq",
-    "body": "${1:computeName}: computed.uniq('${2:propertyKey}'),"
+    "body": "${1:computeName}: uniq('${2:propertyKey}'),"
   },
 
   "computedUniqBy": {
     "prefix": "uniqBy",
-    "body": "${1:computeName}: computed.uniqBy('${2:dependentKey}', '${3:propertyKey}'),"
+    "body": "${1:computeName}: uniqBy('${2:dependentKey}', '${3:propertyKey}'),"
   },
 
   //store
 
   "injectStore": {
-    "prefix": "injstore",
-    "body": "store: inject.service(),"
+    "prefix": "store inject",
+    "body": "store: service(),"
   },
 
   "getStore": {
-    "prefix": "gstore",
+    "prefix": "get store",
     "body": "this.get('store')"
   },
 
   "findAll": {
-    "prefix": "fall",
+    "prefix": "findAll",
     "body": "this.get('store').findAll('${1:model}')"
   },
 
   "peekAll": {
-    "prefix": "pall",
+    "prefix": "peekAll",
     "body": "this.get('store').peekAll('${1:model}')"
   },
 
