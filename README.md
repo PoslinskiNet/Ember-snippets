@@ -1,4 +1,4 @@
-# ember-2-14-snippets README
+# ember-snippets README
 
 # Method List
 |Prefix|Method|
