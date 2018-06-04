@@ -1,17 +1,17 @@
 {
-    "name": "ember-2-14-snippets",
-    "displayName": "Ember-2.14-Snippets",
+    "name": "ember-snippets",
+    "displayName": "Ember-3.0-Snippets",
     "description": "Ember code snippets for VSCode",
-    "version": "0.1.0",
+    "version": "1.1.0",
     "publisher": "Rxbsxn",
     "icon": "images/logo.png",
     "license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Rxbsxn/Ember-2.14-snippets"
+		"url": "https://github.com/Rxbsxn/Ember-snippets"
 	},
 	"bugs": {
-		"url": "https://github.com/Rxbsxn/Ember-2.14-snippets/issues"
+		"url": "https://github.com/Rxbsxn/Ember-snippets/issues"
 	},
     "keywords": [
         "snippets",
