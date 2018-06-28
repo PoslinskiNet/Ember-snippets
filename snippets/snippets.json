@@ -31,146 +31,151 @@
     "body": "import { inject as service } from '@ember/service';\n"
   },
 
+  "importComputed": {
+    "prefix": "computed import",
+    "body": "import { computed } from '@ember/object';\n"
+  },
+
   "importAlias": {
     "prefix": "alias import",
-    "body": "import { alias } from '@ember/object/computed';\n"    
+    "body": "import { alias } from '@ember/object/computed';\n"
   },
 
   "importAnd": {
     "prefix": "and import",
-    "body": "import { and } from '@ember/object/computed';\n"    
+    "body": "import { and } from '@ember/object/computed';\n"
   },
 
   "importBool": {
     "prefix": "bool import",
-    "body": "import { bool } from '@ember/object/computed';\n"    
+    "body": "import { bool } from '@ember/object/computed';\n"
   },
 
   "importCollect": {
     "prefix": "collect import",
-    "body": "import { collect } from '@ember/object/computed';\n"    
+    "body": "import { collect } from '@ember/object/computed';\n"
   },
 
   "importEmpty": {
     "prefix": "empty import",
-    "body": "import { empty } from '@ember/object/computed';\n"    
+    "body": "import { empty } from '@ember/object/computed';\n"
   },
 
   "importEqual": {
     "prefix": "equal import",
-    "body": "import { equal } from '@ember/object/computed';\n"    
+    "body": "import { equal } from '@ember/object/computed';\n"
   },
 
   "importFilter": {
     "prefix": "filter import",
-    "body": "import { filter } from '@ember/object/computed';\n"    
+    "body": "import { filter } from '@ember/object/computed';\n"
   },
 
   "importFilterBy": {
     "prefix": "filterBy import",
-    "body": "import { filterBy } from '@ember/object/computed';\n"    
+    "body": "import { filterBy } from '@ember/object/computed';\n"
   },
 
   "importGt": {
     "prefix": "gt import",
-    "body": "import { gt } from '@ember/object/computed';\n"    
+    "body": "import { gt } from '@ember/object/computed';\n"
   },
 
   "importGte": {
     "prefix": "gte import",
-    "body": "import { gte } from '@ember/object/computed';\n"    
+    "body": "import { gte } from '@ember/object/computed';\n"
   },
 
   "importIntersect": {
     "prefix": "intersect import",
-    "body": "import { intersect } from '@ember/object/computed';\n"    
+    "body": "import { intersect } from '@ember/object/computed';\n"
   },
 
   "importMap": {
     "prefix": "map import",
-    "body": "import { map } from '@ember/object/computed';\n"    
+    "body": "import { map } from '@ember/object/computed';\n"
   },
 
   "importMapBy": {
     "prefix": "mapBy import",
-    "body": "import { mapBy } from '@ember/object/computed';\n"    
+    "body": "import { mapBy } from '@ember/object/computed';\n"
   },
 
   "importMatch": {
     "prefix": "match import",
-    "body": "import { match } from '@ember/object/computed';\n"    
+    "body": "import { match } from '@ember/object/computed';\n"
   },
 
   "importMax": {
     "prefix": "max import",
-    "body": "import { max } from '@ember/object/computed';\n"    
+    "body": "import { max } from '@ember/object/computed';\n"
   },
 
   "importMin": {
     "prefix": "min import",
-    "body": "import { min } from '@ember/object/computed';\n"    
+    "body": "import { min } from '@ember/object/computed';\n"
   },
 
   "importNone": {
     "prefix": "none import",
-    "body": "import { none } from '@ember/object/computed';\n"    
+    "body": "import { none } from '@ember/object/computed';\n"
   },
 
   "importNotEmpty": {
     "prefix": "notEmpty import",
-    "body": "import { notEmpty } from '@ember/object/computed';\n"    
+    "body": "import { notEmpty } from '@ember/object/computed';\n"
   },
 
   "importOneWay": {
     "prefix": "oneWay import",
-    "body": "import { oneWay } from '@ember/object/computed';\n"    
+    "body": "import { oneWay } from '@ember/object/computed';\n"
   },
 
   "importOr": {
     "prefix": "or import",
-    "body": "import { or } from '@ember/object/computed';\n"    
+    "body": "import { or } from '@ember/object/computed';\n"
   },
 
   "importReadOnly": {
     "prefix": "readOnly import",
-    "body": "import { readOnly } from '@ember/object/computed';\n"    
+    "body": "import { readOnly } from '@ember/object/computed';\n"
   },
 
   "importReads": {
     "prefix": "reads import",
-    "body": "import { reads } from '@ember/object/computed';\n"    
+    "body": "import { reads } from '@ember/object/computed';\n"
   },
 
   "importSetDiff": {
     "prefix": "setDiff import",
-    "body": "import { setDiff } from '@ember/object/computed';\n"    
+    "body": "import { setDiff } from '@ember/object/computed';\n"
   },
 
   "importSort": {
     "prefix": "sort import",
-    "body": "import { sort } from '@ember/object/computed';\n"    
+    "body": "import { sort } from '@ember/object/computed';\n"
   },
 
   "importSum": {
     "prefix": "sum import",
-    "body": "import { sum } from '@ember/object/computed';\n"    
+    "body": "import { sum } from '@ember/object/computed';\n"
   },
 
   "importUnion": {
     "prefix": "union import",
-    "body": "import { union } from '@ember/object/computed';\n"    
+    "body": "import { union } from '@ember/object/computed';\n"
   },
 
   "importUniq": {
     "prefix": "uniq import",
-    "body": "import { uniq } from '@ember/object/computed';\n"    
+    "body": "import { uniq } from '@ember/object/computed';\n"
   },
 
   "importUniqBy": {
     "prefix": "uniqBy import",
-    "body": "import { uniqBy } from '@ember/object/computed';\n"    
+    "body": "import { uniqBy } from '@ember/object/computed';\n"
   },
-  
+
   "serviceInject": {
     "prefix": "service inject",
     "body": "${1:ServiceName}: service($2),\n"
@@ -185,28 +190,28 @@
 
   "init": {
     "prefix": "init",
-    "body": "init() {\n\tthis.super(...arguments);\n}"
+    "body": "init() {\n\tthis._super(...arguments);\n}"
   },
 
 
   "didInsertElement": {
     "prefix": "didInsertElement",
-    "body": "didInsertElement() {\n\tthis.super(...arguments);\n}"
+    "body": "didInsertElement() {\n\tthis._super(...arguments);\n}"
   },
 
   "didRender": {
     "prefix": "didRender",
-    "body": "didRender() {\n\tthis.super(...arguments);\n}"
+    "body": "didRender() {\n\tthis._super(...arguments);\n}"
   },
 
   "didReceiveAttrs": {
     "prefix": "didReceiveAttrs",
-    "body": "didReceiveAttrs() {\n\tthis.super(...arguments);\n}"
+    "body": "didReceiveAttrs() {\n\tthis._super(...arguments);\n}"
   },
 
   "didUpdateAttrs": {
     "prefix": "didUpdateAttrs",
-    "body": "didUpdateAttrs() {\n\tthis.super(...arguments);\n}"
+    "body": "didUpdateAttrs() {\n\tthis._super(...arguments);\n}"
   },
 
   // computed
